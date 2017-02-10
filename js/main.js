@@ -9,6 +9,7 @@
 'use strict';
 
 $(function (){
+    //judge 大小屏
     var isSmall = $(window).width() < 768 ? true : false;
     //轮播图响应式 和 tab栏滚动条(最好写到resize里,偷懒的话可以不写)
     function resize_() {
