@@ -1,0 +1,765 @@
+/**
+ * 样式css
+ *
+ */
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+    font-family: 'itcast';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: itcast;
+    font-style: normal;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+
+/**
+ * å¤´éƒ¨åŒºåŸŸ
+ */
+
+#header {
+    /* height: 200px; */
+}
+
+#header .icon-icon {
+    font-size: 40px;
+    color: #e92232;
+    vertical-align: middle;
+}
+
+#header .icon-logo {
+    font-size: 32px;
+    color: #333;
+    vertical-align: middle;
+}
+
+#header > .topbar {
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 40px;
+}
+
+#header > .topbar > .container > .row > div {
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+/*å¯ä»¥é€‰ä¸­é™¤äº†ç¬¬ä¸€ä¸ªåŽé¢çš„æ‰€æœ‰div;é€‚åˆåšåˆ—è¡¨çš„åˆ†å‰²çº¿*/
+#header > .topbar > .container > .row > div + div {
+    border-left: 1px solid #c0c0c0;
+}
+
+#header .mobile-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #888;
+}
+
+#header .mobile-link:hover {
+    text-decoration: none;
+}
+
+#header .mobile-link img {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1001;
+}
+
+#header .mobile-link:hover img {
+    display: block;
+}
+
+#header > .topbar > .container > .row > div:nth-child(3) a {
+    color: #888;
+}
+
+/*#header > .topbar > .container > .row > div {*/
+/*background-color: #f40;*/
+/*height: 40px*/
+/*}*/
+
+/*#header > .topbar > .container > .row > div:nth-of-type(2n) {*/
+/*background-color: #f00;*/
+/*}*/
+
+/**
+ * æµ‹è¯•æ ·å¼åŒºåŸŸ
+ */
+
+/*轮播图*/
+#main_ad > .carousel-inner > .item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*媒体查询 大屏用大图*/
+@media (min-width: 768px) {
+    #main_ad > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+
+/*特色*/
+#tese {
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#tese i {
+    font-size: 34px;
+}
+
+#tese > .container > .row > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tese > .container > .row > div a {
+    text-decoration: none;
+}
+
+#tese > .container > .row > div a:hover {
+    color: red;
+}
+
+/*测试*/
+/*#tese > .container > .row > div {*/
+/*height: 50px;*/
+/*background-color: #f40;*/
+/*}*/
+
+/*#tese > .container > .row > div:nth-of-type(2n) {*/
+/*background-color: #04f;*/
+/*}*/
+
+/*立即预约*/
+#ljyy {
+    /*height: 100px;*/
+    border-bottom: 1px solid #c0c0c0;
+    padding: 20px 0;
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+
+#ljyy > .container > p {
+    /*line-height: 50px;*/
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+#ljyy > .container > .pull-left > span,
+#ljyy > .container > .pull-left > a {
+    color: #e92322;
+}
+
+#ljyy > .container > .pull-left > a {
+    border-bottom: 1px dashed #e92322;
+}
+
+#ljyy > .container > .pull-left > a:hover {
+    text-decoration: none;
+}
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+/*产品预约*/
+#products {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+#products > .container > .tab-content p {
+    margin-bottom: 0;
+}
+
+/*!*在ul的外面用一个盒子包裹; 去掉,在js里动态设置*!*/
+/*#products > .container > .ul-wrapper {*/
+/*overflow-x: scroll;*/
+/*}*/
+
+#products > .container > .ul-wrapper > .nav-tabs > li {
+
+}
+
+#products > .container > .ul-wrapper > .nav-tabs > li > a {
+    background-color: transparent;
+    border: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+#products > .container > .ul-wrapper > .nav-tabs > li > a:hover {
+    color: #000;
+}
+
+#products > .container > .ul-wrapper > .nav-tabs > li.active a {
+    border-bottom: 4px solid #e92322;
+}
+
+#products > .container > .tab-content {
+    padding: 20px 0;
+}
+
+#products > .container > .tab-content .panel-itcast {
+    border-radius: 0;
+}
+
+#products > .container > .tab-content .panel-itcast.actived {
+    background-color: #e92322;
+}
+
+#products > .container > .tab-content .panel-itcast.actived::before {
+    content: '\e915';
+    font-family: itcast;
+    font-size: 50px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -11px;
+    left: 14px;
+}
+
+#products > .container > .tab-content .panel-itcast.disabled {
+    background-color: #e0e0e0;
+}
+
+#products > .container > .tab-content .panel-heading {
+
+    float: right;
+
+    height: 150px;
+
+    width: 120px;
+
+    background-color: transparent;
+
+    border: 0;
+
+    border-left: 1px dashed #c0c0c0;
+
+    position: relative;
+    /*水平方向居中*/
+
+    text-align: center;
+    /*垂直方向居中;不能用 line-height ;而用 padding去挤开*/
+
+    padding: 45px 0;
+    /*这里不能用lineheight=150px;否则p的高度充满整个右边;再写一个p就会被挤到下面去了*/
+
+    /*line-height: 150px;*/
+}
+
+#products > .container > .tab-content h4, p, strong {
+    color: #777;
+}
+
+#products > .container > .tab-content .actived h4,
+#products > .container > .tab-content .actived p,
+#products > .container > .tab-content .actived strong {
+    color: #FFFFFF;
+}
+
+#products > .container > .tab-content .panel-heading strong {
+    font-size: 28px;
+}
+
+#products > .container > .tab-content .panel-heading::before,
+#products > .container > .tab-content .panel-heading::after {
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.panel-itcast > .panel-body::after {
+    content: '\e926';
+    font-family: itcast;
+    position: absolute;
+    left: 135px;
+    top: 16px;
+    color: #e92322;
+    font-size: 90px;
+}
+
+.panel-itcast.actived > .panel-body::after {
+    color: #c0c0c0;
+}
+
+#products > .container > .tab-content .panel-heading::before {
+    left: -8px;
+    top: -8px;
+}
+
+#products > .container > .tab-content .panel-heading::after {
+    bottom: -8px;
+    left: -8px;
+    box-shadow: 0 2px 3px #f0f0f0 inset;
+}
+
+#products > .container > .tab-content .panel-body {
+
+    margin-right: 120px;
+
+    height: 150px;
+}
+
+/*新闻*/
+
+#news {
+    padding: 30px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#news .news-title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px dashed #c0c0c0;
+    position: relative;
+}
+
+#news > .container > .row > div:nth-child(1)::after {
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    border: 1px solid #c0c0c0;
+}
+
+.icon-news01:before {
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news02:before {
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news03:before {
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news04:before {
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+#news .nav-pills a i {
+    padding: 5px;
+}
+
+#news .nav-pills li a {
+
+    width: 60px;
+
+    height: 60px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background-color: #c0c0c0;
+
+    padding: 10px 0;
+
+    margin-bottom: 25px;
+}
+
+#news .nav-pills li.active a {
+    background-color: #e92232;
+}
+
+#news .nav-pills li a:hover {
+    background-color: #e92232;
+}
+
+@media (max-width: 992px) {
+    #news .nav-pills > li {
+        float: left;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+#news .tab-pane ul {
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+/*合作伙伴*/
+#hzhb {
+    padding: 30px 0;
+}
+
+#hzhb ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    /*font-size: 0;*/
+}
+
+#hzhb ul li {
+    float: left;
+    width: calc(100% / 9);
+    /*display: inline-block;*/
+    /*line-height: 1;*/
+}
+
+#hzhb ul li + li {
+    border-left: 1px dashed #e0e0e0;
+}
+
+#hzhb ul li a {
+    font-size: 50px;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+/**
+ * 尾部
+ */
+
+#footer {
+
+}
+
+/* bootstrap 自定义*/
+.btn-my {
+    color: #ffffff;
+    background-color: #A82F2F;
+    border-color: #16F27D;
+}
+
+.btn-my:hover,
+.btn-my:focus,
+.btn-my:active,
+.btn-my.active,
+.open .dropdown-toggle.btn-my {
+    color: #ffffff;
+    background-color: #712BCC;
+    border-color: #16F27D;
+}
+
+.btn-my:active,
+.btn-my.active,
+.open .dropdown-toggle.btn-my {
+    background-image: none;
+}
+
+.btn-my.disabled,
+.btn-my[disabled],
+fieldset[disabled] .btn-my,
+.btn-my.disabled:hover,
+.btn-my[disabled]:hover,
+fieldset[disabled] .btn-my:hover,
+.btn-my.disabled:focus,
+.btn-my[disabled]:focus,
+fieldset[disabled] .btn-my:focus,
+.btn-my.disabled:active,
+.btn-my[disabled]:active,
+fieldset[disabled] .btn-my:active,
+.btn-my.disabled.active,
+.btn-my[disabled].active,
+fieldset[disabled] .btn-my.active {
+    background-color: #A82F2F;
+    border-color: #16F27D;
+}
+
+.btn-my .badge {
+    color: #A82F2F;
+    background-color: #ffffff;
+}
+
+.navbar-itcast {
+    background-color: #fff;
+    border-color: #f5f5f5;
+    margin-bottom: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-itcast .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+
+.navbar-itcast .navbar-brand:hover,
+.navbar-itcast .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.navbar-itcast .navbar-text {
+    color: #777;
+}
+
+.navbar-itcast .navbar-nav > li > a {
+    color: #777;
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.navbar-itcast .navbar-nav > li > a:hover,
+.navbar-itcast .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+
+.navbar-itcast .navbar-nav > .active > a,
+.navbar-itcast .navbar-nav > .active > a:hover,
+.navbar-itcast .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+
+.navbar-itcast .navbar-nav > .disabled > a,
+.navbar-itcast .navbar-nav > .disabled > a:hover,
+.navbar-itcast .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-itcast .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.navbar-itcast .navbar-toggle:hover,
+.navbar-itcast .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.navbar-itcast .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-itcast .navbar-collapse,
+.navbar-itcast .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-itcast .navbar-nav > .open > a,
+.navbar-itcast .navbar-nav > .open > a:hover,
+.navbar-itcast .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.navbar-itcast .navbar-link {
+    color: #777;
+}
+
+.navbar-itcast .navbar-link:hover {
+    color: #333;
+}
+
+.navbar-itcast .btn-link {
+    color: #777;
+}
+
+.navbar-itcast .btn-link:hover,
+.navbar-itcast .btn-link:focus {
+    color: #333;
+}
+
+.navbar-itcast .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-itcast .btn-link:hover,
+.navbar-itcast .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-itcast .btn-link:focus {
+    color: #ccc;
+}
+
+.panel-itcast {
+    /* border-color: #ddd; */
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.panel-itcast > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.panel-itcast > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+
+/*京沪 p元素*/
+.panel-itcast > .panel-heading .tooltips {
+    position: absolute;
+    top: 28px;
+    /*这里 必须要加width100%,因为p浮动了;否则p元素的宽度只有内容宽;而不能充满 tooltips 这个p元素,造成显示的tips的位置错乱*/
+    width: 100%;
+}
+
+.panel-itcast > .panel-heading a {
+    display: inline-block;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 3px;
+    margin: 2px;
+}
+
+.panel-itcast > .panel-heading .badge-one {
+    border: 1px solid #e92322;
+    color: #e92322;
+}
+
+.panel-itcast > .panel-heading .badge-two {
+    color: #399;
+    border: 1px solid #399;
+}
+
+.panel-itcast > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
